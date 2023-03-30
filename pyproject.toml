@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "pfft_python"}]
 
 [tool.poetry.dependencies]
-python = "<3.12,>=3.7"
+python = "<3.12,>=3.8"
 Cython = "^0.29.33"
 numpy = "^1.24.2"
 mpi4py = "^3.1.4"
