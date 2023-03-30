@@ -1,10 +1,9 @@
 [tool.poetry]
-name = "pfft-python"
-version = "0.1.0"
+name = "pfft_python"
+version = "0.1.13"
 description = ""
 authors = ["Johannes Strodel <johannes.strodel@gmail.com>"]
-readme = "README.md"
-packages = [{include = "pfft_python"}]
+packages = [{include = "pfft"}]
 
 [tool.poetry.dependencies]
 python = "<3.12,>=3.8"
@@ -18,6 +17,6 @@ requires = [
     "setuptools >= 65.6.3",
     "wheel >= 0.38.4",
     "Cython == 0.29.33",
-    "mpi4py == 3.1.4""
+    "mpi4py == 3.1.4"
 ]
 build-backend = "setuptools.build_meta"
