@@ -19,7 +19,7 @@ def build_pfft(prefix, compiler, cflags):
             'sh %s/depends/install_pfft.sh ' % package_basedir +
              os.path.abspath(prefix) +
             ' %s' % optimize)
-    print(line)
+    raise ValueError(line)
     if os.path.exists(os.path.join(prefix, 
         'lib', 'libpfft.a')):
         return
