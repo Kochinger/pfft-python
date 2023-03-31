@@ -19,14 +19,14 @@ def build_pfft(prefix, compiler, cflags):
             'sh %s/depends/install_pfft.sh ' % package_basedir +
              os.path.abspath(prefix) +
             ' %s' % optimize)
-    raise ValueError(line)
+    
     if os.path.exists(os.path.join(prefix, 
         'lib', 'libpfft.a')):
         return
 
     ret=os.system(line)
     if ret != 0:
-        raise ValueError("could not build fftw; check MPICC?")
+        raise ValueError(f"could not build fftw; check MPICC? Info: {line}")
 
 class build_ext_subclass(build_ext):
     user_options = build_ext.user_options + \
